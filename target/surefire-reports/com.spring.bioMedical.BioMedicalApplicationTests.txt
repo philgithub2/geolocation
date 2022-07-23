@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.spring.bioMedical.BioMedicalApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.734 s <<< FAILURE! - in com.spring.bioMedical.BioMedicalApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registerController' defined in file [C:\Users\Philippe\biom2\geolocation\target\classes\com\spring\bioMedical\Controller\RegisterController.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spring.bioMedical.Controller.RegisterController]: Constructor threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.IllegalAccessException-->module java.base does not open java.lang to unnamed module @5a1c0542
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spring.bioMedical.Controller.RegisterController]: Constructor threw exception; nested exception is org.springframework.cglib.core.CodeGenerationException: java.lang.IllegalAccessException-->module java.base does not open java.lang to unnamed module @5a1c0542
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.IllegalAccessException-->module java.base does not open java.lang to unnamed module @5a1c0542
+Caused by: java.lang.IllegalAccessException: module java.base does not open java.lang to unnamed module @5a1c0542
+
